@@ -1,0 +1,38 @@
+# dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+apps/web/tsconfig.tsbuildinfo
+
+# builds, coverage, and caches
+coverage/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+apps/engine/chroma_db/
+
+# local env files and secret copies
+.env
+.env.*
+*.env
+*.env.*
+!.env.example
+!**/.env.example
+opportunity rag
+opportunity rag.*
+*opportunity*rag*
+
+# logs
+*.log
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.claude/settings.local.json

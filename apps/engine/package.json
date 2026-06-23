@@ -1,0 +1,12 @@
+{
+  "name": "@startup-engine/engine",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "python -m compileall .",
+    "dev": "uvicorn main:app --reload --port 8000",
+    "lint": "python -m compileall .",
+    "test": "pytest -q",
+    "typecheck": "python -m compileall ."
+  }
+}

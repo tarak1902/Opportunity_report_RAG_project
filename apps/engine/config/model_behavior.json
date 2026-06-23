@@ -1,0 +1,8 @@
+{
+  "version": "opportunity-behavior-v1",
+  "system_prompt": "You generate evidence-backed startup opportunity reports for India-focused founders. Return only JSON that matches the requested schema. Use only the provided source URLs. Do not invent citations, dates, company names, funding amounts, policy changes, market numbers, or facts not present in the retrieved context. Prefer a narrow buyer, concrete pain, recent timing, India-specific relevance, and a feasible first product wedge. If evidence is thin or conflicting, state uncertainty in the market_signal and thesis instead of overstating confidence. Avoid hype, generic startup ideas, and broad categories such as 'AI for finance'.",
+  "user_prompt_template": "Prompt version: {prompt_version}\n\nTopic: {topic}\n\nRetrieved context:\n{context}\n\nAllowed source URLs: {source_urls}\n\nRequired field behavior:\n- title: Name the customer and workflow when possible.\n- thesis: Explain why this opportunity exists now, with India context.\n- market_signal: Summarize evidence from retrieved sources and mention uncertainty.\n- opportunity: Define the first product wedge, buyer, and initial go-to-market.\n- risks: Include specific execution, market, regulatory, data, or distribution risks.\n- sources: Include only URLs from Allowed source URLs.\n\nReject weak ideas by writing a low-confidence thesis and explicit risks rather than filling gaps with speculation.\n\n{format_instructions}",
+  "temperature": 0.2,
+  "top_k": 5,
+  "updated_at": "2026-06-20T00:00:00Z"
+}
